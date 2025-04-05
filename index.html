@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Bluebeam - Men's Accessories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the Poppins font to the entire website */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #001f3f; /* Dark blue background */
+            color: #ffffff; /* White text */
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background: #000000; /* Black navbar */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* Product card styling */
+        .product-card {
+            max-width: 320px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 15px;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .product-footer {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-buy {
+            background: linear-gradient(to right, #3b82f6, #9333ea);
+            color: white;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .btn-buy:hover {
+            background: linear-gradient(to right, #2563eb, #7c3aed);
+        }
+
+        /* Gradient text styling */
+        .gradient-text {
+            background: linear-gradient(to right, #001f3f, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand gradient-text" href="#">Project Bluebeam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collection">Our Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-5" style="background-color: #f8f9fa;">
+        <h1 class="gradient-text" style="font-weight: 800;">Project Bluebeam</h1>
+        <p style="color: #000000; font-size: 1.2rem; margin-top: 10px;">Discover the future of men's accessories with style and innovation.</p>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container my-5">
+        <section id="collection">
+            <h2 class="text-center mb-4">Our Collection</h2>
+
+            <!-- Row 1 -->
+            <div class="row text-center">
+                <!-- Product 1 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/watch.png" alt="Futuristic Watch">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Futuristic Watch</h5>
+                            <p class="product-price">$120</p>
+                            <p class="text-muted small mb-0">A sleek, modern timepiece for the discerning gentleman.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/cufflinks.png" alt="Bold Cufflinks">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Bold Cufflinks</h5>
+                            <p class="product-price">$80</p>
+                            <p class="text-muted small mb-0">Add a touch of sophistication to your attire.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/wallet.jpg" alt="Minimalist Wallet">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Minimalist Wallet</h5>
+                            <p class="product-price">$50</p>
+                            <p class="text-muted small mb-0">Slim, stylish, cant be stolen and built for the future.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row text-center">
+                <!-- Product 4 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/ring.jpg" alt="Tech Ring">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Tech Ring</h5>
+                            <p class="product-price">$95</p>
+                            <p class="text-muted small mb-0">Futuristic ring with embedded smart functions.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/sunglasses.jpg" alt="Smart Sunglasses">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Smart Sunglasses</h5>
+                            <p class="product-price">$150</p>
+                            <p class="text-muted small mb-0">Stylish shades with built-in audio & AR features.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/belt.jpg" alt="Magnetic Belt">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Magnetic Belt</h5>
+                            <p class="product-price">$70</p>
+                            <p class="text-muted small mb-0">Adjustable, secure, and futuristic in design.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row text-center">
+                <!-- Product 7 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/backpack.jpg" alt="Smart Backpack">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Smart Backpack</h5>
+                            <p class="product-price">$110</p>
+                            <p class="text-muted small mb-0">Charge devices on-the-go with this sleek backpack.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/keyholder.jpg" alt="Key Organizer">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Key Organizer</h5>
+                            <p class="product-price">$40</p>
+                            <p class="text-muted small mb-0">Compact solution to carry your keys like a pro.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="col-md-4">
+                    <div class="product-card mx-auto">
+                        <div class="product-image">
+                            <img src="assets/images/bracelet.jpg" alt="Energy Bracelet">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="mb-1">Energy Bracelet</h5>
+                            <p class="product-price">$60</p>
+                            <p class="text-muted small mb-0">Modern wristwear that boosts your daily vibe.</p>
+                        </div>
+                        <div class="product-footer">
+                            <button class="btn btn-outline-secondary w-75">View Details</button>
+                            <button class="btn btn-buy w-75">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center py-4" style="background-color: #f8f9fa;">
+        <div class="container">
+            <!-- Footer Title -->
+            <p class="gradient-text" style="font-weight: 800; font-size: 1.5rem;">Project Bluebeam</p>
+
+            <!-- Social Media Links -->
+            <div class="mb-3">
+                <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: #001f3f;">
+                    <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" style="margin: 0 10px; color: #001f3f;">
+                    <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" style="margin: 0 10px; color: #001f3f;">
+                    <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                </a>
+            </div>
+
+            <!-- Quick Navigation -->
+            <div class="mb-3">
+                <a href="#collection" style="margin: 0 15px; color: #001f3f; text-decoration: none;">Our Collection</a>
+                <a href="#contact" style="margin: 0 15px; color: #001f3f; text-decoration: none;">Contact</a>
+                <a href="#about" style="margin: 0 15px; color: #001f3f; text-decoration: none;">About Us</a>
+            </div>
+
+            <!-- Contact Information -->
+            <p style="color: #001f3f; font-size: 0.9rem;">
+                Email: <a href="mailto:support@projectbluebeam.com" style="color: #001f3f;">support@projectbluebeam.com</a> | Phone: +1 (555) 123-4567
+            </p>
+
+            <!-- Copyright -->
+            <p class="gradient-text" style="font-size: 0.9rem;">&copy; 2025 Project Bluebeam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
